@@ -187,10 +187,10 @@ double RainSnowAttenuation::getSnowAttenuation(double distance,
   double rainAttenuation = rainAtten->getRainAttenuation(distance, frequency);
 
   if (linkHeight <= (meanRainHeight - 3600)) {
-    printf("The location is not affected by the wet snow.");
+    printf("The location is not affected by the wet snow.\n");
     attenSnow = rainAttenuation;
   } else {
-    printf("The location it is affected by the wet snow.");
+    printf("The location it is affected by the wet snow.\n");
     double attenFactor = getSnowAttenFactor(meanRainHeight, linkHeight);
     attenSnow = rainAttenuation * attenFactor;
   }

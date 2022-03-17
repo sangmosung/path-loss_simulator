@@ -147,7 +147,6 @@ double
 MmWaveVehicularPropagationLossModel::GetWeatherAttenuation (double distance3D, double hA, double hB) const
 {
   double weatherAtten = 0;
-  
 
   if(m_snowEnabled)
   {
@@ -379,7 +378,6 @@ MmWaveVehicularPropagationLossModel::GetLoss (Ptr<MobilityModel> deviceA, Ptr<Mo
       case 'v':
       {
         double additionalLoss = GetAdditionalNlosVLoss (distance3D, hA, hB);
-
         lossDb = 38.77 + 16.7 * log10 (distance3D) + 18.2 * log10 (freqGHz) + additionalLoss;
         break;
 
@@ -520,6 +518,7 @@ MmWaveVehicularPropagationLossModel::GetLoss (Ptr<MobilityModel> deviceA, Ptr<Mo
 double
 MmWaveVehicularPropagationLossModel::GetAdditionalNlosVLoss (double distance3D, double hA, double hB) const
 {
+
   // From TR 37.885 v15.2.0
   // When a V2V link is in NLOSv, additional vehicle blockage loss is
   // added as follows:

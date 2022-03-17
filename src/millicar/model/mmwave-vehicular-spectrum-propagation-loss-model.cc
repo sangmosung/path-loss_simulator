@@ -486,7 +486,7 @@ MmWaveVehicularSpectrumPropagationLossModel::GetOxygenLoss (double f, double dis
         alpha = (oxygen_loss[idx][1] - oxygen_loss[idx-1][1])/(oxygen_loss[idx][0] - oxygen_loss[idx-1][0])*(f - oxygen_loss[idx-1][0]) + oxygen_loss[idx-1][1];
         loss = alpha / 1e3 * (dist3D + 3e8 * (tau + tauDelta));
         NS_LOG_DEBUG ("f (subband) " << f << " alpha " << alpha << " dB/km loss " << loss << " dB");
-        std::cout<< "\n Oxygen loss is: " << loss <<std::endl;
+        // std::cout<< "\n Oxygen loss is: " << loss <<std::endl;
       }
     }
   }
