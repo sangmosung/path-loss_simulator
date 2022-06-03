@@ -7,18 +7,18 @@ Path Loss Simulator integrating ns-3 and SUMO is a testbed used in 5G NR V2X res
 1. Install all dependencies required by ns-3. 
 see https://www.nsnam.org/wiki/Installation
 
-
-  minimal requirements for C++:
-  apt-get install gcc g++ python
-
+'''
+minimal requirements for C++:
+apt-get install gcc g++ python
+'''
 
 2. Configure and build ns-3 project:
 
-
-  Opengym Protocol Buffer messages (C++ and Python) are build during configure
-  ./waf configure
-  ./waf build
-
+'''
+Opengym Protocol Buffer messages (C++ and Python) are build during configure
+./waf configure
+./waf build
+'''
 
 
 # TBU
