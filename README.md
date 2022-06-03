@@ -9,7 +9,7 @@ see https://www.nsnam.org/wiki/Installation
 
 '''
 
-# minimal requirements for C++:
+minimal requirements for C++:
 apt-get install gcc g++ python
 
 '''
@@ -18,7 +18,7 @@ apt-get install gcc g++ python
 
 '''
 
-# Opengym Protocol Buffer messages (C++ and Python) are build during configure
+Opengym Protocol Buffer messages (C++ and Python) are build during configure
 ./waf configure
 ./waf build
 
