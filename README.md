@@ -1,4 +1,4 @@
-# Path loss Simulator v1.0  2022-03-17
+# Path loss Simulator v1.1  2022-06-13
 
 Path Loss Simulator integrating ns-3 and SUMO is a testbed used in 5G NR V2X research. The network simulator ns–3 is the de-facto standard for academic and industry studies in the areas of networking protocols and communication technologies. Also SUMO is an open source, portable, microscopic and continuous multi-modal traffic simulation package designed to handle large networks.
 
@@ -12,17 +12,14 @@ see https://www.nsnam.org/wiki/Installation
   
   $apt-get install gcc g++ python
 
+2. Clone git repository
 
-2. Configure and build ns-3 project:
+  $git clone https://github.com/nyuwireless-unipd/ns3-mmwave.git
 
+3. Configure and build ns-3 project:
 
-  Opengym Protocol Buffer messages (C++ and Python) are build during configure
-  
-  $./waf configure
-  
-  $./waf build
-
-
+  $cd path-loss_simulator
+  $./waf configure --disable-python --enable-examples && ./waf build
 
 # TBU
 
