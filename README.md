@@ -27,3 +27,6 @@ see https://www.nsnam.org/wiki/Installation
 
 # Contact
 Sangmo Sung, UNLab, smsung@hanyang.ac.kr
+
+# License
+This software is licensed under the terms of the GNU GPLv2, as like as ns-3. See the LICENSE file for more details.
