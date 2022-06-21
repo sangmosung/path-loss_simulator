@@ -14,7 +14,7 @@ see https://www.nsnam.org/wiki/Installation
   ```
 2. Clone git repository
   ```
-  $git clone https://github.com/nyuwireless-unipd/ns3-mmwave.git
+  $git clone https://github.com/sangmosung/path-loss_simulator.git
   ```
 3. Configure and build ns-3 project:
   ```
