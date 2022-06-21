@@ -6,17 +6,19 @@ Path Loss Simulator integrating ns-3 and SUMO is a testbed used in 5G NR V2X res
 
 1. Install all dependencies required by ns-3. 
 see https://www.nsnam.org/wiki/Installation
-
-
   minimal requirements for C++:
   ```
   $apt-get install gcc g++ python
   ```
-2. Clone git repository
+2. Install Git
+  ```
+  $apt install git
+  ```
+3. Clone git repository
   ```
   $git clone https://github.com/sangmosung/path-loss_simulator.git
   ```
-3. Configure and build ns-3 project:
+4. Configure and build ns-3 project:
   ```
   $cd path-loss_simulator
   $./waf configure --disable-python --enable-examples && ./waf build
