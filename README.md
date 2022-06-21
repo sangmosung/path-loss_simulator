@@ -9,18 +9,18 @@ see https://www.nsnam.org/wiki/Installation
 
 
   minimal requirements for C++:
-  
+  ```
   $apt-get install gcc g++ python
-
+  ```
 2. Clone git repository
-
+  ```
   $git clone https://github.com/nyuwireless-unipd/ns3-mmwave.git
-
+  ```
 3. Configure and build ns-3 project:
-
+  ```
   $cd path-loss_simulator
   $./waf configure --disable-python --enable-examples && ./waf build
-
+  ```
 # TBU
 
 # Contact
