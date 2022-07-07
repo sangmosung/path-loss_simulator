@@ -1,3 +1,7 @@
 * linguist-vendored
 *.py linguist-vendored=true
 *.cpp linguist-vendored=false
+*.c linguist-detectable=false
+*.perl linguist-detectable=false
+*.makefile linguist-detectable=false
+*.m linguist-detectable=false
